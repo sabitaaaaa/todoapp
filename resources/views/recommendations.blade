@@ -1,0 +1,13 @@
+<h2>Recommended Treks</h2>
+@forelse ($treks as $trek)
+    <div>
+        <h3>{{ $trek->name }}</h3>
+        <p>Region: {{ $trek->region }}</p>
+        <p>Duration: {{ $trek->duration }} days</p>
+        <p>Budget: ${{ $trek->budget }}</p>
+        <p>Difficulty: {{ $trek->difficulty }}</p>
+        <p>Tags: {{ implode(', ', json_decode($trek->tags)) }}</p>
+    </div>
+@empty
+    <p>No treks match your preferences.</p>
+@endforelse

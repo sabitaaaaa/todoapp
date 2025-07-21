@@ -46,3 +46,16 @@ Route::get('record',[studentcontroller::class,'records']);
 Route::get('delete_record/{id}',[studentcontroller::class,'delete_record']);
 Route::get('edit_record/{id}',[studentcontroller::class,'edit_record']);
 Route::post('update_data/{id}',[studentcontroller::class,'update_data']);
+ 
+
+
+Route::get('/trek/recommend', [TrekController::class, 'showForm'])->name('trek.form');
+Route::post('/trek/recommend', [TrekController::class, 'recommendTrek'])->name('trek.recommend');
+
+
+
+Route::get('/user-form', function () {
+    return view('user-form.blade.php');
+});
+
+
