@@ -20,7 +20,7 @@ if (isset($_POST['clear'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple PHP To-Do List</title>
+    <title>Simple PHP To-Do List its ayushmaaaaaaa</title>
     <style>
         body { font-family: Arial; padding: 20px; }
         ul { padding-left: 20px; }
